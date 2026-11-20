@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.ps1 text eol=crlf
+# cmd.exe 需要 CRLF。标记为非文本，避免 Git 归一化成 LF 后，GitHub ZIP 下载仍是 Unix 换行。
+*.bat -text
